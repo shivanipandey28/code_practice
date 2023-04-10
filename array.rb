@@ -94,20 +94,84 @@ ar = [1, 2, 3, 4, 5]
 # puts (team.unshift(66)) ## unshift add the value at the start
 
 # #isinclude method use to check num is present or no
-a = [1, 2, 3, 4]
-# puts a.include?(4)
+# a = [1, 2, 3, 4]
+# # puts a.include?(4)
 
-# #flatten  flatten method can be used to take an array that contains nested arrays and create a one-dimensional array.
+# # #flatten  flatten method can be used to take an array that contains nested arrays and create a one-dimensional array.
 
-# print team
-# print team.flatten
+# # print team
+# # print team.flatten
 
-##each_index
-print a
-puts a.each_index { |i| puts "this is each keyword #{i}" }
+# ##each_index
+# print a
+# puts a.each_index { |i| puts "this is each keyword #{i}" }
 
-a1 = [12, 2, 23, 11] #for sorting array
-#print a.sort
+# a1 = [12, 2, 23, 11] #for sorting array
+# #print a.sort
 
-##procut --> combine 2 array
-print a.product(a1)
+# ##procut --> combine 2 array
+# print a.product(a1)
+
+# ## each do
+# item= ["ice cream", "chocolate","movies"]
+
+# item.each do |thing|
+#   puts "I like " + thing
+# end
+
+
+# ##each do
+# n=[1,2,4,5,6,8]
+# n.each do |n|
+#   puts n*2
+# end
+
+# numbers = [5,19,38,72]
+# numbers.each do |numbers|
+#   puts numbers*10
+# end
+
+# ## adhing value in string using push
+# n=[1,23,4,5,785]
+# new_n=[]
+# new_n.push(n)
+# print new_n
+
+## reverse array
+# name=['shivani','pandey']
+# rev=[]
+# name.each do |name|
+#   rev.push(name.reverse)
+
+# end
+# puts rev
+
+# converting a string into an array
+name = "shivani pandey"
+# arr=name.split
+
+# puts arr
+# print arr
+## split  string along comma
+name = " hi, hello,  by,  tata"
+item= name.split(",")
+puts item
+
+
+## joins
+item=['python', 'ruby', 'java']
+puts item.join
+puts item.join(" ")
+
+
+
+item="chicago, miami, seattle"
+
+new = item.split(",")
+new_it = []
+new.each do |item|
+  new_it.push(item.strip.capitalize)
+
+end
+new_itemname= new_it.join(", ")
+puts new_itemname
