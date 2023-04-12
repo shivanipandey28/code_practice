@@ -82,8 +82,8 @@
 # name = "harishankar prashad nath"
 # puts name.upcase.downcase.capitalize
 
-name = "bestpeer is it company"
-puts name.length
+# name = "bestpeer is it company"
+# puts name.length
 # puts name[0]
 # puts name[3]
 # puts name[2]
@@ -94,8 +94,8 @@ puts name.length
 
 #Check for the Starting Characters in a String
 #
-city = "jaipur city"
-puts city.start_with?("jai")
+# city = "jaipur city"
+# puts city.start_with?("jai")
 
 # if you want to check str is present in another str
 # puts name.include?("bestpeer")
@@ -114,6 +114,14 @@ puts city.start_with?("jai")
 # puts "your name is #{name}"
 
 #get part of string (like slicing in python)
-puts name
-puts name[0, 6] #(n-1 will run bcoz indexing start with0)
-puts name[6, 4]
+# puts name
+# puts name[0, 6] #(n-1 will run bcoz indexing start with0)
+# puts name[6, 4]
+
+
+
+s="shivaniiii pandey"
+s1=[]
+s.split.push(s1)
+puts s1
+puts s

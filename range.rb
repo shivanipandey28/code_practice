@@ -1,4 +1,4 @@
-#Let's say that I want a range of numbers from 1 to 20. In Ruby, we can get the range of numbers by using (1..20).
+#to print num  1 to 20. In Ruby, we can get the range of numbers by using (1..20).
 
 n= (1..20)
 n.each do |n|

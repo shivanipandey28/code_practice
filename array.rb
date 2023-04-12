@@ -132,19 +132,19 @@ ar = [1, 2, 3, 4, 5]
 # end
 
 # ## adhing value in string using push
-# n=[1,23,4,5,785]
-# new_n=[]
-# new_n.push(n)
-# print new_n
+n=[1,23,4,5,785]
+new_n=[]
+new_n.push(n)
+print new_n
 
 ## reverse array
-# name=['shivani','pandey']
-# rev=[]
-# name.each do |name|
-#   rev.push(name.reverse)
+name=['shivani','pandey']
+rev=[]
+name.each do |name|
+  rev.push(name.reverse)
 
-# end
-# puts rev
+end
+puts rev
 
 # converting a string into an array
 name = "shivani pandey"
