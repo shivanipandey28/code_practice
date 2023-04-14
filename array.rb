@@ -175,3 +175,16 @@ new.each do |item|
 end
 new_itemname= new_it.join(", ")
 puts new_itemname
+
+
+##taking array input
+puts "enter the size of array"
+size = gets.chomp.to_i
+usser_array = []
+size.times do |n|
+  puts "enter the values of array"
+
+  value = gets.chomp
+  usser_array  << value
+  puts  "the user given array is : #{usser_array} "
+end

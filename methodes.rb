@@ -15,7 +15,13 @@ student("shivani")
 #The yield statement is used to call a block within a method with a value.
 def sum(a,b)
   puts a+b
-  
+
 end
 
 sum(2,3)
+
+
+def name(*s)
+  puts "hi hello #{s}"
+end
+name(1,2,3,4,5)
