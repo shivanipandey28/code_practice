@@ -84,15 +84,17 @@ s={'shivani':22,'rani':23, 'raj':86}
 
 ###3##########################################
 #puts s
-s={'shivani':22,'rani':23, 'raj':86}
+s={'shivani': 22,'rani':23, 'raj':86}
 c = s.select{|k,v| k == :"shivani"}
 puts "this is select method result #{c}"
 puts c
 
 ####
- name = {"a":1,'b':2}
- puts name.key?("a")
-k =  s.select { |k,v| k == :'b'}
+#
+ n = {name: 'bob',surname: 'bhrdwj'}
+ puts n.b?(:name)
+k =  n.select { |k,v| k == :name}
 puts k
 
 
+person = { height: '6 ft', weight: '160 lbs' }

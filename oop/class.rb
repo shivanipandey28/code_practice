@@ -197,3 +197,62 @@ end
 obj = Flower.new("rose1")
 #puts obj.name('rose')
 obj.display
+
+
+
+## geter seter qu
+class GoodDog
+  def initialize(name)
+    @name = name
+  end
+
+  def name                  # This was renamed from "get_name"
+    @name
+  end
+
+  def name=(n)              # This was renamed from "set_name="
+    @name = n
+  end
+
+  def speak
+    "#{@name} says arf!"
+  end
+end
+
+sparky = GoodDog.new("Sparky")
+puts sparky.speak
+puts sparky.name            # "Sparky"
+sparky.name = "Spartacus"
+puts sparky.name            #  "Spartacus"
+
+
+#########################
+# =begin class methode and instance methode
+# =end
+class Ruby
+ def self.class_method
+  puts "i am a class method"
+
+  end
+  def instance_method
+    puts "this is instance method"
+  end
+end
+Ruby.class_method
+# Ruby.instance_method # this will show error
+# instance methode cnt call directly
+Ruby.new.instance_method
+
+
+###################################################
+#class method
+
+class Group
+
+  def self.show # class method defined
+    "i am a group class!"
+  end
+end
+
+#to call class methode dont need  to create obj
+ puts Group.show
