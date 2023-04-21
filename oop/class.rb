@@ -175,7 +175,7 @@ class CSWebsite
   # accessor get and set method
   attr_accessor :website
 end
-
+ 
 # Creating an object of the class
 gfg = CSWebsite.new "old data"
 puts gfg.website
