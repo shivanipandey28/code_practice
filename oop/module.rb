@@ -72,3 +72,34 @@ puts obj.method1
 s = Second.new
 puts s.method1
 ########################
+#it is not posible to create instance variable inside the modue
+#but you can create class then you can create'
+
+module Demo_module
+
+  class Myclass
+    attr_accessor :name, :bank
+  def initialize(name,bank)
+    @name = name
+    @bank  = bank
+    puts "your name is #{@name}, and acount no is #{@bankac}}"
+  end
+ end
+
+ person = Demo_module::Myclass.new("shivani","SBI")
+ person.name = "radhika kashyap"
+ person.bank = "CBI"
+
+class Bank
+  include customer
+
+ def credit
+    puts " here is crediti infprmation"
+ end
+def debite
+    puts " here is all debit informathion "
+end
+end
+
+obj = Bank.new
+puts obj.customer("shivi", 898298)

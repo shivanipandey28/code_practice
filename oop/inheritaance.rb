@@ -6,7 +6,7 @@ class Animal
     puts " i am method 2"
   end
 end
-
+###inheritance
 class GoodDog < Animal
 end
 
@@ -48,3 +48,35 @@ obj3 =Subchild.new
 obj1.show
 obj1.call
 obj3.call
+
+
+#################public private protected
+class Department
+   fixed = 1000
+
+      attr_accessor :Department_name, :fees
+    def initialize(n,f)
+      self.Department_name = n
+      self.fees = f
+      puts " the course is #{n} and the fess #{f}"
+
+    end
+
+    private
+     def hidden_details
+       f * fixed
+     end
+end
+
+ puts obj = Department.new("computerscience", 1300)
+puts obj.hidden_details ## it will give te error
+
+class Education < Department
+  def child
+    puts " this is child class method"
+  end
+
+end
+
+puts objj = Education.new("computerscience", 1300)
+puts objj.hidden_details 

@@ -75,3 +75,31 @@ end
 puts Study.anyname
 obj = Study.new
 puts obj.instance_method
+
+
+######################################
+class Flower
+  def self.rose ## class method
+    "hello this is from class method you can call me diretly ROSE"
+  end
+  def from_intance
+    "this is instance method you can call me only creating obj"
+  end
+end
+
+ puts Flower.rose
+ obj= Flower.new
+ puts obj.from_intance
+
+class Demo
+  def access_class_method_fromothercls
+    Flower.rose
+    puts " this is class method from Flower class"
+  end
+  def display2
+    puts "hi this is demo class"
+  end
+end
+obj2 = Demo.new
+puts obj2.display2
+puts obj2.access_class_method_fromothercls

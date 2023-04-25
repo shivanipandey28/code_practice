@@ -12,7 +12,7 @@
 
 
 
-# # check(4,5)
+# check(4,5)
 
  def check(a,b)
    if (10..20).include?(a) && (20..30).include?(b)
@@ -27,13 +27,14 @@
  check(20,1)
 
 
- ##Write a Ruby program to sort a string's characters alphabetically?
-#  s = shivani
 
-#  puts s.chars.sort
+#Write a Ruby program to sort a string's characters alphabetically?
+s = 'shivani'
+
+ puts s.chars.sort
 #####
-s = "shivani"
-for i in s do
+
+for i in (0..s.length) do
   if ("a".."z").include?(s)
     s.join(s2)
   end
@@ -43,4 +44,34 @@ for i in s do
 
 end
 
+#######################################
+
+module Walkable
+  def walk
+    "I m walking."
+  end
+end
+
+module Swimmable
+  def swim
+    "I m swimming."
+  end
+end
+
+module Climbable
+  def climb
+    "I m climbing."
+  end
+end
+
+class Animal
+  include Walkable
+
+  def speak
+    "I m an animal, and I speak!"
+  end
+end
+
+puts " this is lookup ancestor "
+puts Animal.ancestors
 
